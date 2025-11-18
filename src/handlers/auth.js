@@ -7,6 +7,7 @@ import { setup } from "./setup";
 import { health } from "./health";
 import { portal } from "./portal";
 import { register } from "./register";
+import { revokeTokens } from "./revokeTokens";
 import AppRouterClient from "../routerClients/AppRouterClient";
 import PagesRouterClient from "../routerClients/PagesRouterClient";
 import { config, routes } from "../config/index";
@@ -22,6 +23,7 @@ const routeMap = {
   [routes.logout]: logout,
   [routes.health]: health,
   [routes.portal]: portal,
+  "revoke-tokens": revokeTokens,
   kinde_callback: callback,
 };
 
